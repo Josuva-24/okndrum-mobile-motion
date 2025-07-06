@@ -118,9 +118,10 @@ const OKNDrum: React.FC<OKNDrumProps> = ({
             width: direction === 'horizontal' ? `${stripSize}px` : '100%',
             height: direction === 'vertical' ? `${stripSize}px` : '100%',
             backgroundImage: `url(${patternImage})`,
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',
             backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'hsl(var(--background))'
           }}
         />
       );
