@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -62,6 +63,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-medical': 'var(--gradient-medical)',
+				'gradient-drum': 'var(--gradient-drum)'
+			},
+			boxShadow: {
+				'medical': 'var(--shadow-medical)',
+				'control': 'var(--shadow-control)',
+				'drum': 'var(--shadow-drum)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'drum': 'var(--transition-drum)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
